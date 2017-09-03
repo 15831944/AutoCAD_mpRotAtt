@@ -1,21 +1,26 @@
-﻿using mpPInterface;
+﻿using System.Collections.Generic;
+using ModPlusAPI.Interfaces;
 
 namespace mpRotAtt
 {
-    public class Interface : IPluginInterface
+    public class Interface : IModPlusFunctionInterface
     {
-        private const string _Name = "mpRotAtt";
-        private const string _AvailCad = "2015";
-        private const string _LName = "Угол поворота атрибутов";
-        private const string _Description = "Функция предназначена для изменения угла поворота атрибутов в выбранных блоках";
-        private const string _Author = "Пекшев Александр aka Modis";
-        private const string _Price = "0";
-        public string Name { get { return _Name; } }
-        public string AvailCad { get { return _AvailCad; } }
-        public string LName { get { return _LName; } }
-        public string Description { get { return _Description; } }
-        public string Author { get { return _Author; } }
-        public string Price { get { return _Price; } }
-
+        public SupportedProduct SupportedProduct => SupportedProduct.AutoCAD;
+        public string Name => "mpRotAtt";
+        public string AvailProductExternalVersion => "2015";
+        public string ClassName => string.Empty;
+        public string LName => "Угол поворота атрибутов";
+        public string Description => "Функция предназначена для изменения угла поворота атрибутов в выбранных блоках";
+        public string Author => "Пекшев Александр aka Modis";
+        public string Price => "0";
+        public bool CanAddToRibbon => true;
+        public string FullDescription => string.Empty;
+        public string ToolTipHelpImage => string.Empty;
+        public List<string> SubFunctionsNames => new List<string>();
+        public List<string> SubFunctionsLames => new List<string>();
+        public List<string> SubDescriptions => new List<string>();
+        public List<string> SubFullDescriptions => new List<string>();
+        public List<string> SubHelpImages => new List<string>();
+        public List<string> SubClassNames => new List<string>();
     }
 }
