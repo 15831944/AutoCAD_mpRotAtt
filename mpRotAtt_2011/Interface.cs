@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ModPlusAPI.Interfaces;
 
 namespace mpRotAtt
@@ -8,7 +9,9 @@ namespace mpRotAtt
         public SupportedProduct SupportedProduct => SupportedProduct.AutoCAD;
         public string Name => "mpRotAtt";
         public string AvailProductExternalVersion => "2011";
-        public string ClassName => string.Empty;
+        public string FullClassName => string.Empty;
+        public string AppFullClassName => string.Empty;
+        public Guid AddInId => Guid.Empty;
         public string LName => "Угол поворота атрибутов";
         public string Description => "Функция предназначена для изменения угла поворота атрибутов в выбранных блоках";
         public string Author => "Пекшев Александр aka Modis";
