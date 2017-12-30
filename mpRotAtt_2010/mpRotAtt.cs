@@ -14,6 +14,7 @@ namespace mpRotAtt
 {
     public class MpRotAtt
     {
+        private const string LangItem = "mpRotAtt";
         [CommandMethod("ModPlus", "mpRotAtt", CommandFlags.UsePickSet)]
         public static void Main()
         {
@@ -27,13 +28,13 @@ namespace mpRotAtt
                 var filter = new SelectionFilter(filList);
                 var opts = new PromptSelectionOptions
                 {
-                    MessageForAdding = "\n" + "Выберите блоки: "
+                    MessageForAdding = "\n" + Language.GetItem(LangItem, "msg1")
                 };
                 var res = ed.GetSelection(opts, filter);
                 if (res.Status != PromptStatus.OK)
                     return;
 
-                var pdo = new PromptDoubleOptions("\n" + "Новый угол поворота атрибутов: ") { DefaultValue = 0 };
+                var pdo = new PromptDoubleOptions("\n" + Language.GetItem(LangItem, "msg2")) { DefaultValue = 0 };
                 var pdr = ed.GetDouble(pdo);
                 var ang = pdr.Value;
                 if (pdr.Status == PromptStatus.OK)
