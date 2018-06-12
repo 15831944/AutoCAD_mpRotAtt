@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\..\..\..\..\..\ModPlus\Functions\mpRotAtt\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;ac2013</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -25,21 +25,21 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\..\..\..\..\..\ModPlus\Functions\mpRotAtt\</OutputPath>
-    <DefineConstants>TRACE;ac2013</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>..\..\..\..\_Acad dlls\2018\accoremgd.dll</HintPath>
+      <HintPath>C:\_Acad dlls\2018\accoremgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgd">
-      <HintPath>..\..\..\..\_Acad dlls\2018\acdbmgd.dll</HintPath>
+      <HintPath>C:\_Acad dlls\2018\acdbmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acmgd">
-      <HintPath>..\..\..\..\_Acad dlls\2018\acmgd.dll</HintPath>
+      <HintPath>C:\_Acad dlls\2018\acmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ModPlusAPI">
@@ -49,7 +49,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\mpRotAtt_2010\mpRotAtt.cs">
+    <Compile Include="..\mpRotAtt_2013\mpRotAtt.cs">
       <Link>mpRotAtt.cs</Link>
     </Compile>
     <Compile Include="Interface.cs" />
@@ -57,11 +57,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="..\mpRotAtt_2010\Resources\MpRotAtt_16x16.png">
-      <Link>Resources\MpRotAtt_16x16.png</Link>
+    <Resource Include="..\mpRotAtt_2013\Resources\mpRotAtt_16x16.png">
+      <Link>Resources\mpRotAtt_16x16.png</Link>
     </Resource>
-    <Resource Include="..\mpRotAtt_2010\Resources\MpRotAtt_32x32.png">
-      <Link>Resources\MpRotAtt_32x32.png</Link>
+    <Resource Include="..\mpRotAtt_2013\Resources\mpRotAtt_16x16_dark.png">
+      <Link>Resources\mpRotAtt_16x16_dark.png</Link>
+    </Resource>
+    <Resource Include="..\mpRotAtt_2013\Resources\mpRotAtt_32x32.png">
+      <Link>Resources\mpRotAtt_32x32.png</Link>
+    </Resource>
+    <Resource Include="..\mpRotAtt_2013\Resources\mpRotAtt_32x32_dark.png">
+      <Link>Resources\mpRotAtt_32x32_dark.png</Link>
     </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

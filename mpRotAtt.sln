@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2010", "mpRotAtt_2010\mpRotAtt_2010.csproj", "{64E735AE-0782-4442-8D60-4949E8B3A923}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2011", "mpRotAtt_2011\mpRotAtt_2011.csproj", "{3B8E596A-1F26-4C3C-8DBB-FBB23F296656}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2012", "mpRotAtt_2012\mpRotAtt_2012.csproj", "{B94FBE7D-E836-411F-B11E-F235F3628EF2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2013", "mpRotAtt_2013\mpRotAtt_2013.csproj", "{BC235E66-A800-453C-B34B-AA58443CB1C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2014", "mpRotAtt_2014\mpRotAtt_2014.csproj", "{1BFB2CC1-CA7B-405C-95DE-1EC89B737C62}"
@@ -29,18 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64E735AE-0782-4442-8D60-4949E8B3A923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64E735AE-0782-4442-8D60-4949E8B3A923}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64E735AE-0782-4442-8D60-4949E8B3A923}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64E735AE-0782-4442-8D60-4949E8B3A923}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B8E596A-1F26-4C3C-8DBB-FBB23F296656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B8E596A-1F26-4C3C-8DBB-FBB23F296656}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B8E596A-1F26-4C3C-8DBB-FBB23F296656}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B8E596A-1F26-4C3C-8DBB-FBB23F296656}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B94FBE7D-E836-411F-B11E-F235F3628EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B94FBE7D-E836-411F-B11E-F235F3628EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B94FBE7D-E836-411F-B11E-F235F3628EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B94FBE7D-E836-411F-B11E-F235F3628EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC235E66-A800-453C-B34B-AA58443CB1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC235E66-A800-453C-B34B-AA58443CB1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC235E66-A800-453C-B34B-AA58443CB1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
