@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2018", "mpRotAtt_2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2019", "mpRotAtt_2019\mpRotAtt_2019.csproj", "{E9E1505A-51E7-4922-BFD3-EEB86AEB342D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mpRotAtt_2020", "mpRotAtt_2020\mpRotAtt_2020.csproj", "{63739400-0C21-495F-9B19-7B0100DBA4AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E9E1505A-51E7-4922-BFD3-EEB86AEB342D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E1505A-51E7-4922-BFD3-EEB86AEB342D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E1505A-51E7-4922-BFD3-EEB86AEB342D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63739400-0C21-495F-9B19-7B0100DBA4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63739400-0C21-495F-9B19-7B0100DBA4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63739400-0C21-495F-9B19-7B0100DBA4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63739400-0C21-495F-9B19-7B0100DBA4AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

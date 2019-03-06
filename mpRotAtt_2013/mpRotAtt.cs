@@ -14,7 +14,7 @@ namespace mpRotAtt
         [CommandMethod("ModPlus", "mpRotAtt", CommandFlags.UsePickSet)]
         public static void Main()
         {
-            Statistic.SendCommandStarting(new Interface());
+            Statistic.SendCommandStarting(new ModPlusConnector());
             try
             {
                 var ed = AcApp.DocumentManager.MdiActiveDocument.Editor;
