@@ -1,16 +1,17 @@
-﻿using AcApp = Autodesk.AutoCAD.ApplicationServices.Core.Application;
-using System;
-using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.EditorInput;
-using Autodesk.AutoCAD.Runtime;
-using ModPlusAPI;
-using ModPlusAPI.Windows;
-
-namespace mpRotAtt
+﻿namespace mpRotAtt
 {
+    using System;
+    using Autodesk.AutoCAD.DatabaseServices;
+    using Autodesk.AutoCAD.EditorInput;
+    using Autodesk.AutoCAD.Runtime;
+    using ModPlusAPI;
+    using ModPlusAPI.Windows;
+    using AcApp = Autodesk.AutoCAD.ApplicationServices.Core.Application;
+
     public class MpRotAtt
     {
         private const string LangItem = "mpRotAtt";
+
         [CommandMethod("ModPlus", "mpRotAtt", CommandFlags.UsePickSet)]
         public static void Main()
         {
@@ -49,10 +50,11 @@ namespace mpRotAtt
                             foreach (ObjectId attId in attCol)
                             {
                                 var attRef = (AttributeReference)tr.GetObject(attId, OpenMode.ForWrite);
-                                // Переводим в радианы
+                                
                                 attRef.Rotation = ang * Math.PI / 180.0;
                             }
                         }
+
                         tr.Commit();
                     }
                 }
